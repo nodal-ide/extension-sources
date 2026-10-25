@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nodal-ide/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.nodal.svelte-foundation",
+  "name": "Svelte Foundation",
+  "version": "0.1.0",
+  "type": "nativeSyntaxPack",
+  "description": "Svelte syntax highlighting, embedded script/style zones, and completion.",
+  "author": "Nodal IDE",
+  "url": "https://github.com/nodal-ide/nodal-ide",
+  "languages": ["svelte", "javascript", "typescript", "css", "scss"],
+  "engines": { "codeedit": ">=0.22.0", "nodalide": ">=0.22.0" },
+  "capabilities": ["syntax", "nativeGrammars", "provider"],
+  "contributes": {
+    "syntax": [
+      {
+        "id": "svelte",
+        "displayName": "Svelte",
+        "extensions": ["svelte"],
+        "grammar": {
+          "kind": "native",
+          "path": "grammars/libtree-sitter-svelte.dylib",
+          "symbol": "tree_sitter_svelte",
+          "sha256": "f8c1ddbd3e73da59fb693a9869473eaaa78195b28d85fad84dd2a41a85fe5bc3"
+        },
+        "comments": { "block": ["<!--", "-->"] },
+        "queries": {
+          "highlights": "queries/highlights.scm",
+          "injections": "queries/injections.scm"
+        }
+      }
+    ],
+    "provider": {
+      "command": "node",
+      "args": ["provider.js"],
+      "languages": ["svelte"],
+      "completionTriggers": [".", ":", "@", "#", "{", "$", "\\"]
+    }
+  }
+}

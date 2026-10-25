@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/upperdo/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 1,
+  "id": "com.codeedit.sample.laravel",
+  "name": "Laravel (sample)",
+  "version": "0.1.0",
+  "type": "languagePack",
+  "description": "Sample framework pack: Laravel helpers and facades.",
+  "author": "Nodal IDE Samples",
+  "url": "https://laravel.com/docs",
+  "languages": ["php"],
+  "framework": "laravel/framework",
+  "activation": {
+    "framework": { "file": "composer.json", "requires": { "laravel/framework": ">=9" } }
+  },
+  "contributes": {
+    "symbols": ["symbols/framework.json"],
+    "knowledge": [
+      { "id": "laravel", "title": "Laravel", "root": "knowledge", "index": "index.json" }
+    ]
+  }
+}

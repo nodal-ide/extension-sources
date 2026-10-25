@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nodal-ide/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.nodal.flutter-foundation",
+  "name": "Dart & Flutter Foundation",
+  "version": "0.1.0",
+  "type": "languageProvider",
+  "description": "Dart and Flutter completion for the built-in Dart syntax and highlighting.",
+  "author": "Nodal IDE",
+  "url": "https://github.com/nodal-ide/nodal-ide",
+  "languages": ["dart"],
+  "engines": { "codeedit": ">=0.22.0", "nodalide": ">=0.22.0" },
+  "capabilities": ["provider"],
+  "contributes": {
+    "provider": {
+      "command": "node",
+      "args": ["provider.js"],
+      "languages": ["dart"],
+      "completionTriggers": [".", ":", "@"]
+    }
+  }
+}

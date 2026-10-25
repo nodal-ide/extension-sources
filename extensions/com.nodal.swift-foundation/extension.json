@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nodal-ide/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.nodal.swift-foundation",
+  "name": "Swift Foundation",
+  "version": "0.1.0",
+  "type": "languageProvider",
+  "description": "Swift completion for the built-in Swift syntax and highlighting.",
+  "author": "Nodal IDE",
+  "url": "https://github.com/nodal-ide/nodal-ide",
+  "languages": ["swift"],
+  "engines": { "codeedit": ">=0.22.0", "nodalide": ">=0.22.0" },
+  "capabilities": ["provider"],
+  "contributes": {
+    "provider": {
+      "command": "node",
+      "args": ["provider.js"],
+      "languages": ["swift"],
+      "completionTriggers": [".", ":", "@", "#", "\\"]
+    }
+  }
+}

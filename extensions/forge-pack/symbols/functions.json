@@ -1,0 +1,13 @@
+{
+  "language": "php",
+  "framework": { "name": "forge" },
+  "symbols": [
+    {
+      "name": "component",
+      "kind": "function",
+      "signature": "component(string $name, array|object|null $props = [], array $slots = []): string",
+      "parameters": ["string $name", "array|object|null $props = []", "array $slots = []"],
+      "documentation": "Renders a view partial component."
+    }
+  ]
+}

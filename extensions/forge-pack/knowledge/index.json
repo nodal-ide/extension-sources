@@ -1,0 +1,21 @@
+{
+  "title": "Forge",
+  "subtitle": "Kernel reference",
+  "home": "Home.md",
+  "keywords": ["forge", "endpoint", "modules", "injectable"],
+  "toc": [
+    { "title": "Home", "path": "Home.md" },
+    {
+      "title": "Basics",
+      "children": [
+        { "title": "Overview", "path": "overview.md" },
+      ]
+    },
+    {
+      "title": "Architecture",
+      "children": [
+        { "title": "Routing", "path": "architecture/Architecture.md" },
+      ]
+    },
+  ]
+}

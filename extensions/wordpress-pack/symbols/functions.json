@@ -1,0 +1,37 @@
+{
+  "language": "php",
+  "framework": { "name": "wordpress" },
+  "symbols": [
+    {
+      "name": "add_action",
+      "kind": "function",
+      "signature": "function add_action(string $hook, callable $callback, int $priority = 10, int $accepted_args = 1): void",
+      "parameters": ["string $hook", "callable $callback", "int $priority = 10", "int $accepted_args = 1"],
+      "documentation": "Hooks a function to a specific action."
+    },
+    {
+      "name": "add_filter",
+      "kind": "function",
+      "signature": "function add_filter(string $hook, callable $callback, int $priority = 10, int $accepted_args = 1): void",
+      "parameters": ["string $hook", "callable $callback", "int $priority = 10", "int $accepted_args = 1"],
+      "documentation": "Hooks a function or method to a specific filter action."
+    },
+    {
+      "name": "get_option",
+      "kind": "function",
+      "signature": "function get_option(string $option, mixed $default = false): mixed",
+      "parameters": ["string $option", "mixed $default = false"],
+      "documentation": "Retrieves an option value based on an option name."
+    },
+    {
+      "name": "shortcode_atts",
+      "kind": "function",
+      "signature": "function shortcode_atts(array $pairs, array $atts, string $shortcode = ''): array",
+      "parameters": ["array $pairs", "array $atts", "string $shortcode = ''"],
+      "documentation": "Combines user attributes with known attributes and fills in defaults."
+    },
+    { "name": "WP_Query", "kind": "class", "documentation": "The WordPress query class." },
+    { "name": "WP_Post", "kind": "class", "documentation": "Core class used to implement the post object." },
+    { "name": "WP_User", "kind": "class", "documentation": "Core class used to implement the user object." }
+  ]
+}

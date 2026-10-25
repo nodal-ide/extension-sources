@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nodal-ide/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.nodal.vue-foundation",
+  "name": "Vue Foundation",
+  "version": "0.1.0",
+  "type": "nativeSyntaxPack",
+  "description": "Vue 3 single-file component syntax with embedded script, template, and style zones.",
+  "author": "Nodal IDE",
+  "url": "https://github.com/nodal-ide/nodal-ide",
+  "languages": ["vue", "javascript", "typescript", "css", "scss"],
+  "engines": { "codeedit": ">=0.22.0", "nodalide": ">=0.22.0" },
+  "capabilities": ["syntax", "nativeGrammars"],
+  "contributes": {
+    "syntax": [
+      {
+        "id": "vue",
+        "displayName": "Vue",
+        "extensions": ["vue"],
+        "aliases": ["vue"],
+        "grammar": {
+          "kind": "native",
+          "path": "grammars/libtree-sitter-vue.dylib",
+          "symbol": "tree_sitter_vue",
+          "sha256": "14b2b982810b0d1c612b8d63aafc15151c4387ae300d3a0ddc1e9c9ad4c4cfea"
+        },
+        "comments": { "block": ["<!--", "-->"] },
+        "queries": {
+          "highlights": "queries/highlights.scm",
+          "injections": "queries/injections.scm"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/upperdo/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 1,
+  "id": "com.codeedit.sample.forge",
+  "name": "Forge Kernel (sample)",
+  "version": "0.1.0",
+  "type": "languagePack",
+  "description": "Sample Forge Kernel Pack",
+  "author": "Nodal IDE Samples",
+  "url": "https://forge-kernel.github.io/",
+  "languages": ["php"],
+  "framework": "forge",
+  "activation": {
+    "files": ["forge.php", "forge.json", "forge_structure.php"]
+  },
+  "contributes": {
+    "symbols": ["symbols/functions.json"],
+    "knowledge": [
+      { "id": "forge", "title": "Forge", "root": "knowledge", "index": "index.json" }
+    ]
+  }
+}

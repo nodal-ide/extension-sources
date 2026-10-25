@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/upperdo/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.codeedit.sample.geojson",
+  "name": "GeoJSON (sample)",
+  "version": "0.1.0",
+  "type": "languagePack",
+  "description": "Sample query-only syntax pack: highlights .geojson files using the built-in JSON grammar.",
+  "author": "Nodal IDE Samples",
+  "url": "https://geojson.org/",
+  "languages": ["geojson"],
+  "engines": { "codeedit": ">=0.18.0" },
+  "capabilities": ["syntax"],
+  "contributes": {
+    "syntax": [
+      {
+        "id": "geojson",
+        "displayName": "GeoJSON",
+        "extensions": ["geojson"],
+        "grammar": { "kind": "builtin", "name": "json" },
+        "queries": { "highlights": "queries/highlights.scm" }
+      }
+    ]
+  }
+}

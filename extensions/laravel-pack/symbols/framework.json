@@ -1,0 +1,37 @@
+{
+  "language": "php",
+  "framework": { "name": "laravel/framework", "version": ">=9" },
+  "symbols": [
+    {
+      "name": "route",
+      "kind": "function",
+      "signature": "function route(string $name, mixed $parameters = [], bool $absolute = true): string",
+      "parameters": ["string $name", "mixed $parameters = []", "bool $absolute = true"],
+      "documentation": "Generate a URL to a named route.",
+      "insertText": "route('$1')"
+    },
+    {
+      "name": "view",
+      "kind": "function",
+      "signature": "function view(string $view, array $data = []): Illuminate\\View\\View",
+      "parameters": ["string $view", "array $data = []"],
+      "documentation": "Get the evaluated view contents for the given view.",
+      "insertText": "view('$1')"
+    },
+    {
+      "name": "collect",
+      "kind": "function",
+      "signature": "function collect(mixed $value = null): Illuminate\\Support\\Collection",
+      "parameters": ["mixed $value = null"],
+      "documentation": "Create a collection from the given value."
+    },
+    { "name": "Arr", "kind": "class", "namespace": "Illuminate\\Support", "documentation": "Array helpers." },
+    { "name": "Str", "kind": "class", "namespace": "Illuminate\\Support", "documentation": "String helpers." },
+    {
+      "name": "Collection",
+      "kind": "class",
+      "namespace": "Illuminate\\Support",
+      "documentation": "Fluent, chainable wrapper around arrays."
+    }
+  ]
+}

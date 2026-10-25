@@ -1,0 +1,16 @@
+{
+  "title": "Laravel",
+  "subtitle": "Framework reference",
+  "home": "Home.md",
+  "keywords": ["laravel", "eloquent", "blade", "artisan"],
+  "toc": [
+    { "title": "Home", "path": "Home.md" },
+    {
+      "title": "Basics",
+      "children": [
+        { "title": "Routing", "path": "Routing.md" },
+        { "title": "Views", "path": "Views.md" }
+      ]
+    }
+  ]
+}

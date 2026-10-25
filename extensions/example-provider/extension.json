@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/upperdo/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 1,
+  "id": "com.codeedit.example.provider",
+  "name": "Example Provider",
+  "version": "0.1.0",
+  "type": "languageProvider",
+  "description": "Example out-of-process language provider (Node) for PHP.",
+  "author": "Nodal IDE Samples",
+  "url": "https://example.com",
+  "languages": ["php"],
+  "contributes": {
+    "provider": {
+      "command": "node",
+      "args": ["provider.js"],
+      "languages": ["php"]
+    }
+  }
+}

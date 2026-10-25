@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/upperdo/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.codeedit.sample.vue",
+  "name": "Vue Syntax (sample)",
+  "version": "0.1.0",
+  "type": "nativeSyntaxPack",
+  "description": "Sample Vue single-file component syntax using a trusted native tree-sitter grammar.",
+  "author": "Nodal IDE Samples",
+  "languages": ["vue", "javascript", "typescript", "css", "scss"],
+  "engines": { "codeedit": ">=0.18.0" },
+  "capabilities": ["syntax", "nativeGrammars"],
+  "contributes": {
+    "syntax": [
+      {
+        "id": "vue",
+        "displayName": "Vue",
+        "extensions": ["vue"],
+        "grammar": {
+          "kind": "native",
+          "path": "grammars/libtree-sitter-vue.dylib",
+          "symbol": "tree_sitter_vue"
+        },
+        "comments": { "block": ["<!--", "-->"] },
+        "queries": {
+          "highlights": "queries/highlights.scm",
+          "injections": "queries/injections.scm"
+        }
+      }
+    ]
+  }
+}

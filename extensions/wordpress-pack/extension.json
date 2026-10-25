@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/upperdo/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 1,
+  "id": "com.codeedit.sample.wordpress",
+  "name": "WordPress (sample)",
+  "version": "0.1.0",
+  "type": "languagePack",
+  "description": "Sample framework pack that activates without Composer, by detecting wp-config.php.",
+  "author": "Nodal IDE Samples",
+  "url": "https://developer.wordpress.org/",
+  "languages": ["php"],
+  "framework": "wordpress",
+  "activation": {
+    "files": ["wp-config.php", "wp-load.php"]
+  },
+  "contributes": {
+    "symbols": ["symbols/functions.json"]
+  }
+}
