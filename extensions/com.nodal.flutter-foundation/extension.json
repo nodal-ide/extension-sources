@@ -3,9 +3,9 @@
   "schemaVersion": 2,
   "id": "com.nodal.flutter-foundation",
   "name": "Dart & Flutter Foundation",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "type": "languageProvider",
-  "description": "Dart and Flutter completion for the built-in Dart syntax and highlighting.",
+  "description": "Dart and Flutter completion, hover docs, signature help, symbols and Flutter API diagnostics for the built-in Dart syntax.",
   "author": "Nodal IDE",
   "url": "https://github.com/nodal-ide/nodal-ide",
   "languages": ["dart"],
@@ -16,7 +16,7 @@
       "command": "node",
       "args": ["provider.js"],
       "languages": ["dart"],
-      "completionTriggers": [".", ":", "@"]
+      "completionTriggers": [".", ":", "@", "("]
     }
   }
 }
