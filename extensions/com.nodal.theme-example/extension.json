@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nodal-ide/CodeEditLang/master/Schema/language-extension.schema.json",
+  "schemaVersion": 2,
+  "id": "com.nodal.theme-example",
+  "name": "Nodal Theme Example",
+  "version": "1.0.0",
+  "type": "theme",
+  "description": "Example theme pack showing the contributes.themes contract.",
+  "author": "Nodal IDE",
+  "url": "https://github.com/nodal-ide/nodal-ide",
+  "engines": { "codeedit": ">=0.24.0", "nodalide": ">=0.24.0" },
+  "capabilities": ["themes"],
+  "contributes": {
+    "themes": [
+      { "id": "nodal.example.dark", "path": "themes/nodal-example-dark.cetheme" }
+    ]
+  }
+}
